@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Home">
+    <item android:id="@+id/github" android:icon="@drawable/ic_launcher"
+        android:showAsAction="always"
+        android:title="@string/github_label"
+        android:titleCondensed="@string/github"
+        android:visible="true"
+        tools:ignore="AppCompatResource"></item>
+</menu>
