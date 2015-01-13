@@ -57,7 +57,7 @@
 		either express or implied. See the License for the specific
 		language governing permissions and limitations under the License.</string>
     <string name="no_email">Sorry, I couldn\'t find any e-mail apps on your phone</string>
-    <string name="title_activity_voice">VoiceActivity</string>
+    <string name="title_activity_voice">VOICE</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_oli">OliActivity</string>
 

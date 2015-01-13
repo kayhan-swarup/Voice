@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@android:color/holo_blue_dark"
-
+    android:background="@android:color/holo_red_light"
+    android:id="@+id/container_login"
     android:layout_height="match_parent">
 
 
@@ -15,77 +15,131 @@
         android:textSize="50sp"
         android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="20sp"
-        android:id="@+id/login_textView" />
 
-    <EditText
-        android:hint="USER NAME"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:id="@+id/userid_login" />
 
-    <EditText
-        android:hint="PASSWORD"
-        android:layout_marginTop="20dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:id="@+id/password_login" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20sp"
+            android:id="@+id/login_textView" />
+        <EditText
+            android:hint="USER NAME"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:id="@+id/userid_login" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:id="@+id/login_button" />
+        <EditText
+            android:hint="PASSWORD"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:id="@+id/password_login" />
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:id="@+id/sign_up"
-        android:text="Sign Up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:id="@+id/login_button" />
+        </LinearLayout>
 
-    <EditText
-        android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
-        android:hint="FULL NAME"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fullname" />
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_marginTop="20dp"
+           android:textSize="20sp"
+           android:id="@+id/sign_up"
+           android:text="Sign Up"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
 
-    <EditText
-        android:background="#FFFFFF"
-        android:hint="USER NAME"
-        android:layout_marginTop="20dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/userId_signup" />
+       <LinearLayout
 
-    <EditText
-        android:hint="PASSWORD"
-        android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/password_signup" />
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
 
-    <EditText
-        android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
-        android:layout_width="300dp"
-        android:hint="RETYPE PASSWORD"
-        android:layout_height="wrap_content"
-        android:id="@+id/password_signup2" />
+           android:layout_height="30dp">
+           <EditText
+               android:background="#FFFFFF"
+               android:hint="First Name"
+               android:layout_width="0px"
+               android:layout_weight=".8"
+               android:layout_height="match_parent"
+               android:id="@+id/firstName_signup" />
+           <TextView
+               android:layout_width="0px"
+               android:layout_weight=".2"
+               android:layout_height="wrap_content" />
+           <EditText
+               android:id="@+id/lastName_signup"
+               android:layout_width="0px"
+               android:background="#FFFFFF"
+                android:hint="Last Name"
+               android:layout_weight=".8"
+               android:layout_height="match_parent" />
+           </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:id="@+id/sign_up_button" />
+
+       <EditText
+           android:background="#FFFFFF"
+           android:hint="USER NAME"
+           android:layout_marginTop="20dp"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/userId_signup" />
+
+       <EditText
+           android:hint="PASSWORD"
+           android:layout_marginTop="20dp"
+           android:background="#FFFFFF"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/password_signup" />
+
+       <EditText
+           android:layout_marginTop="20dp"
+           android:background="#FFFFFF"
+           android:layout_width="300dp"
+           android:hint="RETYPE PASSWORD"
+           android:layout_height="wrap_content"
+           android:id="@+id/password_signup2" />
+       <EditText
+           android:id="@+id/email_signup"
+           android:layout_marginTop="20dp"
+           android:background="#FFFFFF"
+           android:hint="EMAIL"
+           android:layout_width="300dp"
+           android:layout_height="30dp" />
+       <RadioGroup
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RadioButton
+               android:id="@+id/male_signUp"
+               android:text="MALE     "
+               android:checked="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <RadioButton
+               android:id="@+id/female_signUp"
+               android:text="FEMALE"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           </RadioGroup>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Sign Up"
+           android:id="@+id/sign_up_button" />
+       </LinearLayout>
 </LinearLayout>

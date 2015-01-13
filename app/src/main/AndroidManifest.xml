@@ -16,11 +16,13 @@
 
         <activity
             android:name=".Home"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".VoiceActivity"
-            android:label="@string/title_activity_voice" >
+            android:label="@string/title_activity_voice"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,11 +31,13 @@
         </activity>
         <activity
             android:name=".ProfileActivity"
-            android:label="@string/title_activity_profile" >
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".OliActivity"
-            android:label="@string/title_activity_oli" >
+            android:label="@string/title_activity_oli"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
